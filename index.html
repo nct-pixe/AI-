@@ -129,8 +129,56 @@ h2{font-family:'Noto Serif JP',serif;font-size:clamp(1.2rem,3.5vw,2.2rem);font-w
   </div>
 </div>
 
-<!-- S5: OFFER -->
+
+<!-- S5: PRICING -->
 <div class="slide" id="s5">
+  <p class="tag">― PRICE COMPARISON ―</p>
+  <h2 style="margin-bottom:1.2rem;">年間会員なら<br><span class="gold-anim">15,000円もお得！</span></h2>
+  <div style="display:flex;gap:1rem;width:100%;max-width:700px;margin:0 auto;align-items:stretch;">
+
+    <!-- 月会員 -->
+    <div style="flex:1;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.15);border-radius:20px;padding:1.5rem 1.25rem;text-align:center;">
+      <div style="font-size:.8rem;color:rgba(255,255,255,.5);margin-bottom:.4rem;">月会員プラン</div>
+      <div style="font-size:.75rem;color:rgba(255,255,255,.4);margin-bottom:1rem;">まずは試してみたい方に</div>
+      <div style="font-family:'Noto Serif JP',serif;font-size:clamp(1.8rem,5vw,2.8rem);font-weight:900;color:rgba(255,255,255,.6);line-height:1;">3,750<span style="font-size:.9rem;font-weight:400;">円/月</span></div>
+      <div style="font-size:.78rem;color:rgba(255,255,255,.35);margin:.5rem 0 1rem;">年間 45,000円</div>
+      <div style="display:flex;flex-direction:column;gap:.45rem;text-align:left;font-size:.8rem;color:rgba(255,255,255,.5);">
+        <div>✓ 全カリキュラムへのアクセス</div>
+        <div>✓ 月1回の講座受講</div>
+        <div>✓ オンライン質問サポート</div>
+        <div>✓ 会員専用コミュニティ</div>
+        <div>✓ いつでも退会可能</div>
+      </div>
+    </div>
+
+    <!-- 年会員 -->
+    <div style="flex:1;background:linear-gradient(160deg,rgba(212,175,55,0.12),rgba(212,175,55,0.04));border:2px solid rgba(212,175,55,0.5);border-radius:20px;padding:1.5rem 1.25rem;text-align:center;position:relative;">
+      <div style="position:absolute;top:-1px;right:1rem;background:linear-gradient(135deg,#f0d98a,#d4af37);color:#0a0a0f;font-size:.72rem;font-weight:900;padding:.3rem .9rem;border-radius:0 0 10px 10px;">おすすめ</div>
+      <div style="font-size:.8rem;color:#f0d98a;margin-bottom:.4rem;font-weight:700;">年会員プラン</div>
+      <div style="font-size:.75rem;color:rgba(255,255,255,.5);margin-bottom:1rem;">じっくり学びたい方に</div>
+      <div style="font-family:'Noto Serif JP',serif;font-size:clamp(1.8rem,5vw,2.8rem);font-weight:900;color:#f0d98a;line-height:1;">2,500<span style="font-size:.9rem;font-weight:400;color:#f0d98a;">円/月</span></div>
+      <div style="font-size:.78rem;color:rgba(255,255,255,.5);margin:.5rem 0 .6rem;">年間一括 30,000円</div>
+      <div style="background:rgba(52,211,153,0.15);border:1px solid rgba(52,211,153,0.4);border-radius:10px;padding:.5rem .8rem;margin-bottom:.6rem;">
+        <span style="color:#6ee7b7;font-size:.82rem;font-weight:700;">★ 月会員より4ヶ月分（15,000円）お得！</span>
+      </div>
+      <div style="background:rgba(212,175,55,0.12);border:1px solid rgba(212,175,55,0.3);border-radius:10px;padding:.6rem .8rem;margin-bottom:.8rem;">
+        <div style="font-size:.85rem;margin-bottom:.3rem;">🎁</div>
+        <div style="color:#f0d98a;font-size:.82rem;font-weight:700;">年会員限定特典</div>
+        <div style="color:rgba(255,255,255,.6);font-size:.75rem;margin-top:.25rem;">「AIリスク診断」ツールを無料プレゼント！</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:.45rem;text-align:left;font-size:.8rem;color:rgba(255,255,255,.6);">
+        <div>✓ 全カリキュラムへのアクセス</div>
+        <div>✓ 月1回の講座受講</div>
+        <div>✓ オンライン質問サポート</div>
+        <div>✓ 会員専用コミュニティ</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- S6: OFFER -->
+<div class="slide" id="s6">
   <div class="badge">★ 年間会員 移行限定特典 ★</div>
   <h2>この機会をお見逃しなく</h2>
   <div class="offer-box">
@@ -146,8 +194,8 @@ h2{font-family:'Noto Serif JP',serif;font-size:clamp(1.2rem,3.5vw,2.2rem);font-w
   <div class="red-badge">⏰ お申し込み期限：6月25日（木）まで</div>
 </div>
 
-<!-- S6: CTA -->
-<div class="slide" id="s6">
+<!-- S7: CTA -->
+<div class="slide" id="s7">
   <div style="font-size:2.8rem;margin-bottom:.9rem;">👑</div>
   <h2>年間会員へ移行して<br><span class="gold-anim">特典を受け取る</span></h2>
   <p class="sub">より深くAIを学び、安全に使いこなす一年へ。<br>今だけの特典付きで、新しいAIライフを始めましょう。</p>
@@ -167,7 +215,7 @@ h2{font-family:'Noto Serif JP',serif;font-size:clamp(1.2rem,3.5vw,2.2rem);font-w
 </div>
 
 <script>
-const TOTAL=6, DURATION=6000;
+const TOTAL=7, DURATION=6000;
 let cur=0, playing=true, timer=null, rafId=null, progStart=0;
 const prog=document.getElementById('prog');
 
@@ -181,12 +229,12 @@ for(let i=0;i<TOTAL;i++){
 
 function updateUI(){
   document.querySelectorAll('.dot').forEach((d,i)=>d.classList.toggle('active',i===cur));
-  document.getElementById('counter').textContent=(cur+1)+' / '+TOTAL;
+  document.getElementById('counter').textContent=(cur+1)+' / 7';
 }
 
 function showSlide(idx){
   document.querySelectorAll('.slide').forEach((s,i)=>s.classList.toggle('active',i===idx));
-  if([0,4,5].indexOf(idx)>=0) addParticles(idx);
+  if([0,5,6].indexOf(idx)>=0) addParticles(idx);
 }
 
 function goTo(idx){
