@@ -147,6 +147,78 @@ html,body{width:100%;height:100%;overflow:hidden;font-family:'Noto Sans JP',sans
 .autoplay-bar{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,#f0d98a,#d4af37);z-index:101;width:0;transition:width .1s linear;box-shadow:0 0 10px rgba(212,175,55,0.6);}
 .play-toggle{width:2.3rem;height:2.3rem;border-radius:50%;border:none;cursor:pointer;background:rgba(212,175,55,0.2);color:var(--gold-light);font-size:.9rem;transition:all .2s;display:flex;align-items:center;justify-content:center;}
 .play-toggle:hover{background:var(--gold);color:#0a0a0f;}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+
+  /* SLIDE 1 */
+  #s1 .inner { padding: 1.5rem !important; }
+  #s1 .ribbon { font-size: .7rem !important; letter-spacing:.1em !important; padding:.4rem 1rem !important; }
+  #s1 h1 { font-size: clamp(1.5rem, 6.5vw, 2.2rem) !important; margin-bottom: 1rem !important; }
+  #s1 .sub { font-size: .82rem !important; margin-bottom: 1.2rem !important; }
+
+  /* SLIDE 2 - 完全縦積み・画像非表示 */
+  #s2 .inner {
+    flex-direction: column !important;
+    padding: 1.25rem 1.25rem 5rem !important;
+    gap: 1rem !important;
+    overflow-y: auto !important;
+    align-items: flex-start !important;
+  }
+  #s2 .left { width: 100% !important; }
+  #s2 .right { display: none !important; }
+  #s2 .tag { font-size: .72rem !important; }
+  #s2 h2 { font-size: clamp(1.2rem, 5.5vw, 1.7rem) !important; margin-bottom:.8rem !important; }
+  #s2 .desc { font-size: .82rem !important; line-height: 1.7 !important; margin-bottom:.9rem !important; }
+  #s2 .feat { gap: .7rem !important; }
+  #s2 .feat-icon { width: 34px !important; height: 34px !important; font-size: .95rem !important; flex-shrink:0 !important; }
+  #s2 .feat-txt { font-size: .82rem !important; }
+
+  /* SLIDE 3 */
+  #s3 .inner { padding: 1.25rem 1.25rem 5rem !important; justify-content: flex-start !important; padding-top: 2rem !important; }
+  #s3 .head { margin-bottom: 1rem !important; }
+  #s3 h2 { font-size: clamp(1.1rem, 5vw, 1.6rem) !important; }
+  #s3 .cards { grid-template-columns: 1fr !important; gap: .65rem !important; }
+  #s3 .vcard {
+    display: flex !important; flex-direction: row !important;
+    align-items: center !important; text-align: left !important;
+    padding: .8rem 1rem !important; gap: .8rem !important;
+  }
+  #s3 .vcard .vicon { font-size: 1.5rem !important; margin-bottom: 0 !important; flex-shrink: 0; }
+  #s3 .vcard .vtitle { font-size: .9rem !important; margin-bottom: .25rem !important; }
+  #s3 .vcard .vtext { font-size: .78rem !important; line-height: 1.5 !important; }
+
+  /* SLIDE 4 */
+  #s4 .inner { padding: 1.25rem 1.25rem 5rem !important; }
+  #s4 .badge { font-size: .72rem !important; padding: .4rem 1rem !important; }
+  #s4 h2 { font-size: clamp(1.1rem, 5vw, 1.6rem) !important; }
+  #s4 .offer-box { padding: 1.25rem 1rem !important; margin: .8rem 0 !important; width:100% !important; }
+  #s4 .offer-box .o-label { font-size: .82rem !important; }
+  #s4 .o-plan .from { font-size: .95rem !important; }
+  #s4 .o-plan .to { font-size: 1.2rem !important; }
+  #s4 .offer-box .o-gift { font-size: .9rem !important; line-height: 1.6 !important; }
+  #s4 .free-tag { font-size: .8rem !important; }
+
+  /* SLIDE 5 */
+  #s5 .inner { padding: 1.25rem 1.25rem 5rem !important; }
+  #s5 .crown { font-size: 2.2rem !important; margin-bottom: .8rem !important; }
+  #s5 h2 { font-size: clamp(1.3rem, 6vw, 2rem) !important; margin-bottom: .8rem !important; }
+  #s5 .sub { font-size: .82rem !important; margin-bottom: 1rem !important; }
+  #s5 .deadline-big { margin-bottom: 1.2rem !important; }
+  #s5 .cta-btn { font-size: .9rem !important; padding: .9rem 1.8rem !important; width: 100% !important; justify-content: center !important; }
+  #s5 .url-note { font-size: .75rem !important; }
+
+  /* NAV */
+  .nav { padding: .35rem .9rem !important; gap: .5rem !important; bottom: .75rem !important; }
+  .nav-btn, .play-toggle { width: 1.9rem !important; height: 1.9rem !important; font-size: .8rem !important; }
+  .dot { width: 7px !important; height: 7px !important; }
+  .dot.active { width: 20px !important; }
+  .counter { font-size: .7rem !important; min-width: 32px !important; }
+
+  /* DEADLINE */
+  .deadline { font-size: .72rem !important; padding: .3rem .8rem !important; }
+}
+
 </style>
 </head>
 <body>
